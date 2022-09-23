@@ -1,0 +1,147 @@
+/* Universal selectors */
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  position:relative;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  background-color: skyblue;
+  color: navy;
+ 
+}
+
+h1,
+h2{
+  margin:20px;
+}
+
+main {
+  padding: 40px 0;
+  position: relative;
+  align-items:flex-end;
+}
+
+li {
+  display: inline;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ce5713;
+}
+
+header,
+footer {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  background-color: #272661;
+}
+
+header {
+  position: fixed;
+  border-bottom: 10px solid #94c1dd;
+}
+
+footer {
+  position: absolute;
+  margin-top: 0;
+  bottom: 0;
+  border-bottom: 10px solid #46464f;
+  color: #FDF8F5;    
+}
+
+figure {
+  display: inline;
+    flex: 0 0 200px;
+    /* background-color: #fff; */
+    padding: 30px;
+    
+  
+}
+
+img {
+  align-items: center;
+  
+  margin: 20px auto;
+  /* flex: 0 0 200px; */
+  border-radius: 20px;
+  box-shadow: 5px 6px 3px #13293d;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 5%;
+  }
+
+  to {
+    margin-left: 10%;
+    width: 10%;
+  }
+}
+.figcaption{
+  align-content: center;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 0;
+  padding: 20px 10px 40px 10px;
+  border-top: 3px solid #9a94dd;
+  background-color:  #c5bfe8;
+}
+
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px;
+  border: 5px solid #DDAF94;
+  border-radius: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+  
+input, 
+textarea {
+  box-sizing: border-box;
+  width: 300px;
+  border: 1px solid #4F4846;
+}
+
+textarea {
+  vertical-align: top;
+  height: 60px;
+}
+  
+button {
+  height: 40px;
+  width: 120px;
+  background-color: #4F4846;
+  color: #FDF8F5;
+}
+ 
+/* Class Selectors */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+@media screen and (max-width: 768px) {
+  main,
+  img {
+    flex-direction: column; 
+  }
+}
+
